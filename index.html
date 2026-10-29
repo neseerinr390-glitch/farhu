@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FN Henna | 100% Pure Organic Henna & Cone Products</title>
+    <style>
+        :root {
+            --primary-color: #3b5323;
+            --secondary-color: #8fbc8f;
+            --accent-color: #f7f5f0;
+            --text-color: #2c2c2c;
+            --white: #ffffff;
+            --earth-brown: #6b4423;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--accent-color);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2b3d19;
+        }
+
+        /* Products Section */
+        .products-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .product-desc {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .product-price {
+            color: var(--earth-brown);
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .cart-btn {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .cart-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">FN Henna</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Shop Henna</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>100% Chemical-Free Organic Henna</h1>
+            <p>Experience deep, rich stains with our farm-fresh, triple-sifted natural henna cones, powders, and aftercare essential oils.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">Our Pure Henna Collection</h2>
+        <p class="section-subtitle">Crafted with pure Lawsonia Inermis leaves and essential oils—zero synthetic dyes or chemicals.</p>
+        
+        <div class="product-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=500&q=80" alt="Organic Henna Cone" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Fresh Bridal Henna Cones (Pack of 5)</h3>
+                    <p class="product-desc">Made fresh to order using pure eucalyptus, lavender, and clove oils.</p>
+                    <p class="product-price">$15.00</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80" alt="Henna Powder" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Organic Body Art Henna Powder (100g)</h3>
+                    <p class="product-desc">Triple-sifted, premium crop pure Lawsonia Inermis leaf powder.</p>
+                    <p class="product-price">$12.50</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608248597359-9d77f07753e2?auto=format&fit=crop&w=500&q=80" alt="Henna Aftercare Oil" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Natural Henna Aftercare Balm & Oil</h3>
+                    <p class="product-desc">Infused with organic lemon and eucalyptus to deepen your stain.</p>
+                    <p class="product-price">$10.00</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512290900672-355b0a39945c?auto=format&fit=crop&w=500&q=80" alt="DIY Henna Kit" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Complete DIY Henna Mixing Kit</h3>
+                    <p class="product-desc">Includes powder, cellophane triangles, sugar, and essential oils.</p>
+                    <p class="product-price">$28.00</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FN Henna. All rights reserved. Pure tradition, naturally delivered.</p>
+    </footer>
+
+</body>
+</html>
